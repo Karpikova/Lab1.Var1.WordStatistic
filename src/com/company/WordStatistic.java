@@ -146,7 +146,7 @@ public class WordStatistic implements Runnable{
     }
 
     private boolean ContainsOnlyRus(String word) {
-        Pattern pWord = Pattern.compile("[а-яА-Я]*");
+        Pattern pWord = Pattern.compile("[а-яА-ЯЁё]*");
         Matcher mWord = pWord.matcher(word);
         return ((mWord.matches()) ? true : false);
     }
